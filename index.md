@@ -7,7 +7,7 @@
     Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa, Lakmal Seneviratne, and Irfan Hussain
 </div>
 <div style="text-align: center;">
-  {% include button.html text="GitHub" icon="github" link="https://github.com/Muhayyuddin/vision-tracking" color="#0366d6" %}
+  {% include button.html text="GitHub" icon="github" link="https://github.com/Muhayyuddin/llm-tamp" color="#0366d6" %}
   {% include button.html text="Preprint" icon="assets/arxiv.png" link="https://arxiv.org/" color="#0366d6"  %}
   {% include button.html text="FAQs"  link="#faqs" color="#0366d6"  %}
 </div>
