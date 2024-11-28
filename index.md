@@ -1,16 +1,92 @@
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
-       Ontology-driven Prompt Tuning for LLM-based Task and Motion Planning
+        Benchmarking Vision-Based Object Tracking for USVs in Complex Maritime Environments
 </div>
 <div style="text-align: center; font-size: 16px; margin-bottom: 10px; line-height: 1.4;">
-    Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa, Lakmal Seneviratne, and Irfan Hussain
+    Muhayy Ud Din, Ahsan B. Bakht, Waseem Akram, Lakmal Seneviratne, and Irfan Hussain
 </div>
 <div style="text-align: center;">
   {% include button.html text="GitHub" icon="github" link="https://github.com/Muhayyuddin/llm-tamp" color="#0366d6" %}
   {% include button.html text="Preprint" icon="assets/arxiv.png" link="https://arxiv.org/" color="#0366d6"  %}
   {% include button.html text="FAQs"  link="#faqs" color="#0366d6"  %}
 </div>
-<h5 style="margin-bottom: 10px;"> comming soon... </h5>
+<h5 style="margin-bottom: 10px;"> Overview </h5>
+<div style="text-align: justify; font-size: 14px; margin-bottom: 10px; line-height: 1.4;">
+Performing complex  manipulation tasks in dynamic environments requires efficient Task and Motion Planning (TAMP) approaches, which combine high-level symbolic plan with low-level motion planning. Advances in Large Language Models (LLMs), such as GPT-4, is transforming task planning by offering natural language as an intuitive and flexible way to describe tasks, generate symbolic plans, and reason. However, the effectiveness of LLM-based TAMP approaches is limited due to static and template-based prompting, which struggles in adapting to dynamic environments and complex task contexts. To address these limitations, this work proposes a novel ontology-driven prompt-tuning framework that employs knowledge-based reasoning to refine and expand user prompts with task contextual reasoning and knowledge-based environment state descriptions. Integrating domain-specific knowledge into the prompt ensures semantically accurate and context-aware task plans. The proposed framework demonstrates its effectiveness by resolving semantic errors in symbolic plan generation, such as maintaining logical temporal goal ordering in scenarios involving hierarchical object placement. The proposed framework is validated through both simulation and real-world scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability to dynamic environments, and the generation of semantically correct task plans. 
+</div>
+<h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
+  <iframe width="560" height="300" 
+          src="https://www.youtube.com/?autoplay=1&mute=1&loop=1&playlist=nt7EuF2b9zk" 
+          title="USV Tracking" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+
+  <iframe width="560" height="300" 
+          src="https://www.youtube.com/?autoplay=1&mute=1&loop=1&playlist=02cuiZU8Cv8" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+
+</div>
+
+<!--<h6 style="margin-bottom: 5px;">Trackers performance</h6>
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+    We evaluated the performance of the trackers under varying conditions, including clear sea environments and dust storms. The results are showcased in the videos below.
+</div>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+  <iframe width="560" height="300" 
+          src="https://www.youtube.com/embed/6SRgelFJeew?autoplay=1&mute=1&loop=1&playlist=6SRgelFJeew" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+
+  <iframe width="560" height="300" 
+          src="https://www.youtube.com/embed/MIL2nLxuRNs?autoplay=1&mute=1&loop=1&playlist=MIL2nLxuRNs&controls=0" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+
+</div> !-->
+
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+    Trackers performance on real data.
+</div>
+<div style="text-align: center;">
+  <img src="assets/Combined_Real.png" alt="framework" />
+</div>
+
+<h5 id="framework" style="margin-bottom: 10px;">Tracking Framework</h5>
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+The ontology-driven LM-TAMP framework enhances prompt elaboration for generating semantically accurate symbolic plans. It begins by processing the user input to extract actions and objects through semantic tagging. The Contextual Inference Engine uses SPARQL queries to retrieve object types and priorities from the ontology, ensuring the correct action sequence based on predefined rules. The Perception Module, with YOLO-based object detection and FoundationPose for object pose estimation, provides real-time spatial data. This information is textualize using ontological knowledge by the Env State Descriptor and fed into the Prompt Generator. The final prompt is then fed into the LLM Task Planner, which produces a structured task plan. Finally, the Motion Planner ensures the robot executes the task with feasible, collision-free movements.
+</div>
+<div style="text-align: center;">
+  <img src="assets/framework-1.png" alt="framework" />
+</div>
+
+
+<h5 id="faqs" style="margin-bottom: 10px;">FAQs</h5>
+<h8>Q1- Why we need Ontology-driven LLM-TAMP?</h8> 
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+---
+</div>
+<h8>Q2- Why we just used GPT-4 why not other LLM models?</h8> 
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+---
+</div>
+<h8>Q3- What is the benefit of this research work?</h8>
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+---
+</div>
+<h8>Q3- What is the limitations of the proposed approach?</h8>
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+---
+</div>
 
