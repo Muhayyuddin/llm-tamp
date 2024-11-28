@@ -1,10 +1,10 @@
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
-        Benchmarking Vision-Based Object Tracking for USVs in Complex Maritime Environments
+        Ontology-driven Prompt Tuning for LLM-based Task and Motion Planning
 </div>
 <div style="text-align: center; font-size: 16px; margin-bottom: 10px; line-height: 1.4;">
-    Muhayy Ud Din, Ahsan B. Bakht, Waseem Akram, Lakmal Seneviratne, and Irfan Hussain
+    Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa,Lakmal Seneviratne, and Irfan Hussain
 </div>
 <div style="text-align: center;">
   {% include button.html text="GitHub" icon="github" link="https://github.com/Muhayyuddin/llm-tamp" color="#0366d6" %}
