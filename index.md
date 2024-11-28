@@ -38,7 +38,7 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
 
 <h6 style="margin-bottom: 5px;"> Prompt Tuning Results on Random User Inputs</h6>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
-    We evaluated the performance of the trackers under varying conditions, including clear sea environments and dust storms. The results are showcased in the videos below.
+    We tested the proposed prompt tunning framework on different random user inputs within the kitchen domain to test the prompt tuning module. Below video shows some sample responses.
 </div>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
