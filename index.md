@@ -14,7 +14,7 @@
     <img src="assets/upclogo.png" alt="Arxiv Logo" style="height: 50px;">
   </a>
   <a href="#faqs" target="_self">
-    <img src="assets/DLRlogo" alt="FAQs Logo" style="height: 50px;">
+    <img src="assets/DLRlogo.png" alt="FAQs Logo" style="height: 50px;">
   </a>
 </div>
 
