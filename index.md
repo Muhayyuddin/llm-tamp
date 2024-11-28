@@ -6,23 +6,16 @@
 <div style="text-align: center; font-size: 16px; margin-bottom: 10px; line-height: 1.4;">
     Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa, Lakmal Seneviratne, and Irfan Hussain
 </div>
-<div style="text-align: center; display: flex; justify-content: center; gap: 20px; align-items: center;">
-  <a href="https://github.com/Muhayyuddin/llm-tamp" target="_blank">
-    <img src="assets/kulogo.png" alt="GitHub Logo" style="height: 50px;">
-  </a>
-  <a href="https://arxiv.org/" target="_blank">
-    <img src="assets/upclogo.png" alt="Arxiv Logo" style="height: 50px;">
-  </a>
-  <a href="#faqs" target="_self">
-    <img src="assets/DLRlogo.png" alt="FAQs Logo" style="height: 50px;">
-  </a>
-</div>
 
 <div style="text-align: center;">
   {% include button.html text="GitHub" icon="github" link="https://github.com/Muhayyuddin/llm-tamp" color="#0366d6" %}
   {% include button.html text="Preprint" icon="assets/arxiv.png" link="https://arxiv.org/" color="#0366d6"  %}
   {% include button.html text="FAQs"  link="#faqs" color="#0366d6"  %}
 </div>
+<div style="text-align: center; width: 100%; overflow: hidden;">
+  <img src="assets/logo.png" alt="Institution Logos" style="width: 100%; height: auto;">
+</div>
+
 <h5 style="margin-bottom: 10px; color=red"> UNDER CONSTRUCTION </h5>
 
 <h5 style="margin-bottom: 10px;"> Overview </h5>
