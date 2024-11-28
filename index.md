@@ -36,34 +36,27 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
 
 </div>
 
-<!--<h6 style="margin-bottom: 5px;">Trackers performance</h6>
+<h6 style="margin-bottom: 5px;"> Prompt Tuning Results on Random User Inputs</h6>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
     We evaluated the performance of the trackers under varying conditions, including clear sea environments and dust storms. The results are showcased in the videos below.
 </div>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
   <iframe width="560" height="300" 
-          src="https://www.youtube.com/embed/6SRgelFJeew?autoplay=1&mute=1&loop=1&playlist=6SRgelFJeew" 
+          src="https://www.youtube.com?autoplay=1&mute=1&loop=1&playlist=6SRgelFJeew" 
           title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
   </iframe>
 
-  <iframe width="560" height="300" 
-          src="https://www.youtube.com/embed/MIL2nLxuRNs?autoplay=1&mute=1&loop=1&playlist=MIL2nLxuRNs&controls=0" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-  </iframe>
+</div> 
 
-</div> !-->
-
-<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+<!--<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
     Trackers performance on real data.
 </div>
 <div style="text-align: center;">
   <img src="assets/ssp4.png" alt="framework" />
-</div>
+</div>!-->
 
 <h5 id="framework" style="margin-bottom: 10px;">Tracking Framework</h5>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
@@ -73,6 +66,13 @@ The ontology-driven LM-TAMP framework enhances prompt elaboration for generating
   <img src="assets/ssp4.png" alt="framework" />
 </div>
 
+<h5 id="framework" style="margin-bottom: 10px;">Ontological Knowledge Graph Framework</h5>
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+Below is the ontological knowledge graph from the ontologies that are used in the paper as example use cases
+</div>
+<div style="text-align: center;">
+  <img src="assets/ontograph.png" alt="framework" />
+</div>
 
 <h5 id="faqs" style="margin-bottom: 10px;">FAQs</h5>
 <h8>Q1- Why we need Ontology-driven LLM-TAMP?</h8> 
