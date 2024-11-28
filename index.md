@@ -60,7 +60,7 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
     Trackers performance on real data.
 </div>
 <div style="text-align: center;">
-  <img src="assets/Combined_Real.png" alt="framework" />
+  <img src="assets/ssp4.png" alt="framework" />
 </div>
 
 <h5 id="framework" style="margin-bottom: 10px;">Tracking Framework</h5>
