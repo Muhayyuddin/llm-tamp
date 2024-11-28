@@ -11,7 +11,7 @@
   {% include button.html text="Preprint" icon="assets/arxiv.png" link="https://arxiv.org/" color="#0366d6"  %}
   {% include button.html text="FAQs"  link="#faqs" color="#0366d6"  %}
 </div>
-<h5 style="margin-bottom: 10px;"> UNDER CONSTRUCTION </h5>
+<h5 style="margin-bottom: 10px; color=red"> UNDER CONSTRUCTION </h5>
 
 <h5 style="margin-bottom: 10px;"> Overview </h5>
 <div style="text-align: justify; font-size: 14px; margin-bottom: 10px; line-height: 1.4;">
