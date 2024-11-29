@@ -23,6 +23,8 @@
 Performing complex  manipulation tasks in dynamic environments requires efficient Task and Motion Planning (TAMP) approaches, which combine high-level symbolic plan with low-level motion planning. Advances in Large Language Models (LLMs), such as GPT-4, is transforming task planning by offering natural language as an intuitive and flexible way to describe tasks, generate symbolic plans, and reason. However, the effectiveness of LLM-based TAMP approaches is limited due to static and template-based prompting, which struggles in adapting to dynamic environments and complex task contexts. To address these limitations, this work proposes a novel ontology-driven prompt-tuning framework that employs knowledge-based reasoning to refine and expand user prompts with task contextual reasoning and knowledge-based environment state descriptions. Integrating domain-specific knowledge into the prompt ensures semantically accurate and context-aware task plans. The proposed framework demonstrates its effectiveness by resolving semantic errors in symbolic plan generation, such as maintaining logical temporal goal ordering in scenarios involving hierarchical object placement. The proposed framework is validated through both simulation and real-world scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability to dynamic environments, and the generation of semantically correct task plans. 
 </div>
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
+<h7 style="margin-bottom: 10px;">Results in Real Environment</h7> 
+
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
 <video width="100%" height="auto" controls autoplay muted loop>
@@ -30,8 +32,19 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
   Your browser does not support the video tag.
 </video>
 
+
+
+</div>
+<h7 style="margin-bottom: 10px;">Results in Simulation Environment</h7> 
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
 <video width="100%" height="auto" controls autoplay muted loop>
   <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="100%" height="auto" controls autoplay muted loop>
+  <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
