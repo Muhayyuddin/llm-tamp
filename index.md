@@ -25,7 +25,7 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
-<video width="560" height="300" controls autoplay muted loop>
+<video width="100%" height="auto" controls autoplay muted loop>
   <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/Onto-LLM-1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
