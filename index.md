@@ -30,12 +30,10 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
   Your browser does not support the video tag.
 </video>
 
-  <iframe width="560" height="300" 
-          src="https://www.youtube.com/?autoplay=1&mute=1&loop=1&playlist=02cuiZU8Cv8" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-  </iframe>
+<video width="100%" height="auto" controls autoplay muted loop>
+  <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 </div>
 
