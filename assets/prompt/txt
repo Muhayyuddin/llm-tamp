@@ -1,4 +1,6 @@
-The tabletop environment has a robot arm and several objects. The robot sits at (0, 0), faces positive x-axis, while positive z-axis points up. {task}. Remember {note}.
+The tabletop environment has a robot arm and several objects. The robot sits at (0, 0), faces positive x-axis, while positive z-axis points up.
+
+{task}. Remember {note}.
 
 The robot has the following primitive actions, where each primitive action can take a list of objects and parameters as input:
 - pick([obj], {}): pick up obj, with no parameters.
@@ -24,4 +26,4 @@ Please organize the output following the json format below:
     "Reasoning": "My reasoning for the failure of last sampled parameters is ...",
     "Full Plan": ["pick(['green_bowl'], {})", "place(['green_bowl'], {'x': 0.51, 'y': 0.02, 'theta': 0.00})", ...]
 }
-Your output in json is (please don't output ```json):
+Your output in json is :
