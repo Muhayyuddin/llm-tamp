@@ -91,18 +91,14 @@ Below is the ontological knowledge graph from the ontologies that are used in th
 <h5 id="faqs" style="margin-bottom: 10px;">FAQs</h5>
 <h8>Q1- Why we need Ontology-driven LLM-TAMP?</h8> 
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
----
+Ontology-driven LLM-TAMP is crucial because it combines the generative capabilities of language models with the structured reasoning of ontologies to address the limitations of traditional LLM-TAMP approaches. It enhances task planning success rates by providing domain-specific knowledge, logical rules, and explicit object relationships, reducing instruction ambiguity. By incorporating an ontology, the system minimizes reliance on LLM calls, improves efficiency, and ensures robustness in complex and underspecified scenarios. This approach ensures semantically correct task sequencing and more reliable execution, making it ideal for real-world, complex environments.
 </div>
-<h8>Q2- Why did we just use GPT-4? Why not other LLM models?</h8> 
+<h8>Q2- What is the benefit of this research work?</h8>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
----
-</div>
-<h8>Q3- What is the benefit of this research work?</h8>
-<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
----
+This research enhances task and motion planning (TAMP) by integrating ontology-driven reasoning with large language models, enabling robots to understand better and execute complex, multi-step tasks. By utilizing structured domain knowledge, the approach ensures higher accuracy, reliability, and efficiency, even in scenarios with ambiguous or incomplete instructions. Practical applications include household automation (e.g., cleaning and organizing), warehouse management, healthcare assistance, and industrial robotics, where precise object categorization and task sequencing are crucial. This work bridges the gap between human-like contextual understanding and robotic precision, advancing the usability of intelligent systems in real-world environments.
 </div>
 <h8>Q3- What are the limitations of the proposed approach?</h8>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
----
+The limitations of the ontology-driven LLM-TAMP approach primarily arise from its dependence on pre-defined ontologies and structured knowledge bases. The approach may struggle with tasks involving objects or actions not covered by the ontology, leading to reduced flexibility. Additionally, the dependence on LLMs for natural language understanding can result in errors when faced with highly ambiguous or novel prompts. Real-time performance may also be affected in complex scenarios due to the computational overhead of reasoning and query processing.
 </div>
 
