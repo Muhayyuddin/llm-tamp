@@ -36,14 +36,14 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
 
 </div>
 <h7 style="margin-bottom: 20px;">Results in Simulation Environment</h7> 
-<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
 
 <video width="100%" height="auto" controls autoplay muted loop>
   <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-<video style="margin-bottom: 10px;" width="100%" height="auto" controls autoplay muted loop>
+<video width="100%" height="auto" controls autoplay muted loop>
   <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -72,9 +72,9 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
   <img src="assets/ssp4.png" alt="framework" />
 </div>!-->
 
-<h5 id="framework" style="margin-bottom: 10px;">Tracking Framework</h5>
+<h5 id="framework" style="margin-bottom: 10px;">Ontology-driven Prompt Tunning Framework</h5>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
-The ontology-driven LM-TAMP framework enhances prompt elaboration for generating semantically accurate symbolic plans. It begins by processing the user input to extract actions and objects through semantic tagging. The Contextual Inference Engine uses SPARQL queries to retrieve object types and priorities from the ontology, ensuring the correct action sequence based on predefined rules. The Perception Module, with YOLO-based object detection and FoundationPose for object pose estimation, provides real-time spatial data. This information is textualize using ontological knowledge by the Env State Descriptor and fed into the Prompt Generator. The final prompt is then fed into the LLM Task Planner, which produces a structured task plan. Finally, the Motion Planner ensures the robot executes the task with feasible, collision-free movements.
+The ontology-driven LM-TAMP framework enhances prompt elaboration for generating semantically accurate symbolic plans. It begins by processing the user input to extract actions and objects through semantic tagging. The Contextual Inference Engine uses SPARQL queries to retrieve object types and priorities from the ontology, ensuring the correct action sequence based on predefined rules. The Perception Module, with YOLO-based object detection and FoundationPose for object pose estimation, provides real-time spatial data. This information is textualized using ontological knowledge by the Env State Descriptor and fed into the Prompt Generator. The final prompt is then fed into the LLM Task Planner, which produces a structured task plan. Finally, the Motion Planner ensures the robot executes the task with feasible, collision-free movements.
 </div>
 <div style="text-align: center;">
   <img src="assets/ssp4.png" alt="framework" />
@@ -93,7 +93,7 @@ Below is the ontological knowledge graph from the ontologies that are used in th
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
 ---
 </div>
-<h8>Q2- Why we just used GPT-4 why not other LLM models?</h8> 
+<h8>Q2- Why did we just use GPT-4? Why not other LLM models?</h8> 
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
 ---
 </div>
@@ -101,7 +101,7 @@ Below is the ontological knowledge graph from the ontologies that are used in th
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
 ---
 </div>
-<h8>Q3- What is the limitations of the proposed approach?</h8>
+<h8>Q3- What are the limitations of the proposed approach?</h8>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
 ---
 </div>
