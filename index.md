@@ -24,14 +24,10 @@ Performing complex  manipulation tasks in dynamic environments requires efficien
 <h7 style="margin-bottom: 20px;">Results in Real Environment</h7> 
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/dLez7wkwOrU?autoplay=1&mute=1&loop=1si=1sD1CjML7FpOkbST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-</iframe>
 <video width="100%" height="auto" controls autoplay muted loop>
   <source src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/Onto-LLM-1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-
 
 </div>
 <h7 style="margin-bottom: 20px;">Results in Simulation Environment</h7> 
