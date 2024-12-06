@@ -16,7 +16,6 @@
   <img src="assets/logo.png" alt="Institution Logos" style="width: 100%; height: auto;">
 </div>
 
-<h5 style="margin-bottom: 10px; color=red"> UNDER CONSTRUCTION </h5>
 
 <h5 style="margin-bottom: 10px;"> Overview </h5>
 <div style="text-align: justify; font-size: 14px; margin-bottom: 10px; line-height: 1.4;">
