@@ -78,9 +78,16 @@ The ontology-driven LM-TAMP framework enhances prompt elaboration for generating
   <img src="assets/ssp4.png" alt="framework" />
 </div>
 
-<h5 id="framework" style="margin-bottom: 10px;">Ontological Knowledge Graph Framework</h5>
+<h5 id="framework" style="margin-bottom: 10px;">Ontological Knowledge Graph</h5>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
-Below is the ontological knowledge graph from the ontologies that are used in the paper as example use cases
+Below is the class hierarchy of the ontologies that are used in the paper as example use cases
+</div>
+<div style="text-align: center;">
+  <img src="assets/OWLVIZ.png" alt="framework" />
+</div>
+
+<div style="text-align: justify; font-size: 14px; line-height: 1.4;">
+Below is the sample ontological knowledge graph along with some individuals from the ontologies that are used in the paper as example use cases
 </div>
 <div style="text-align: center;">
   <img src="assets/ontograph.png" alt="framework" />
