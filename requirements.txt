@@ -10,3 +10,8 @@ pyyaml
 google-generativeai
 IPython
 hydra-core
+pybullet
+spacy
+rdflib
+ultralytics
+
