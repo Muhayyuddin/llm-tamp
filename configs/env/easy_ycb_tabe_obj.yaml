@@ -1,0 +1,6 @@
+defaults:
+  - urdfs: table_environment
+  - basket: small
+
+env_name: easy_ycb_table_obj
+task_instances: 10

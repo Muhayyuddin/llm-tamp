@@ -1,0 +1,8 @@
+The tabletop environment has a robot arm and several objects. The robot sits at (0, 0), faces positive x-axis, while positive z-axis points up. {task}. Remember {note}.
+
+The robot has the following primitive actions, where each primitive action can take a list of objects and parameters as input:
+- pick([obj], {}): pick up obj, with no parameters.
+- place([obj], {"x": [0.00, 1.00], "y": [-1.00, 1.00],"z": [0.0, 0.05], "theta": [-3.14, 3.14]}): place obj at location (x, y, z) with planar rotation theta, where x ranges (0.0, 1.0), y ranges (-1.0, 1.0), z ranges (0.0, 0.05), and theta ranges (-3.14, 3.14).
+
+The initial environment state is: 
+{state}

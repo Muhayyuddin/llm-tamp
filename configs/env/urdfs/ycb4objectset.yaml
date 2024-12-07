@@ -1,0 +1,29 @@
+storage_table:
+  x: 0.55
+  y: 0.0
+  z: 0.0
+green_bowl:
+  x: 0.65
+  y: -0.11
+  z: 0.06
+
+
+banana:
+  x: 0.42
+  y: -0.02
+  z: 0.04
+ 
+grey_plate:
+  x: 0.5
+  y: 0.15
+  z: 0.045
+
+apple:
+  x: 0.68
+  y: 0.13
+  z: 0.04
+
+cup:
+  x: 0.45
+  y: -0.15
+  z: 0.05

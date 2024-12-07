@@ -1,0 +1,6 @@
+defaults:
+  - urdfs: ycb4objectset
+  - basket: small
+
+env_name: easy_ycb_objects_scene
+task_instances: 10

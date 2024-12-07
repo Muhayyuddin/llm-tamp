@@ -1,0 +1,43 @@
+table:
+  x: 0.30
+  y: -0.48
+  z: 0.04
+sugar_box:
+  x: 0.42
+  y: -0.30
+  z: 0.04
+ 
+storage_table:
+  x: 0.48
+  y: 0.13
+  z: 0.04
+wooden_crate:
+  x: 0.35
+  y: 0.32
+  z: 0.04
+tray:
+  x: 0.6
+  y: -0.11
+  z: 0.04
+
+green_bowl:
+  x: 0.30
+  y: -0.48
+  z: 0.04
+banana:
+  x: 0.42
+  y: -0.30
+  z: 0.04
+ 
+grey_plate:
+  x: 0.48
+  y: 0.13
+  z: 0.04
+apple:
+  x: 0.35
+  y: 0.32
+  z: 0.04
+cup:
+  x: 0.39
+  y: -0.11
+  z: 0.04
