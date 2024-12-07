@@ -20,11 +20,16 @@ class TAMPRunner:
         self.env_cfg = cfg.env
         self.planner_cfg = cfg.planner
         print(cfg.env)
-        print('=============================================111111111111111111111111111111111')
-        # environment
-        #self.env = PackCompactEnv()
-        #self.env = HouseHoldObjEnv()
-        self.env = HouseHoldItemEnv()
+        if cfg.env.env_name == 'easy_ycb_table_obj':
+            # environment
+            self.env = HouseHoldObjEnv()
+        elif cfg.env.env_name == 'easy_ycb_objects_scene':
+            self.env = HouseHoldItemEnv()
+        else:
+            self.env = PackCompactEnv()
+
+            
+
 
         self.primitive_actions = self.env.primitive_actions
      
@@ -41,7 +46,10 @@ class TAMPRunner:
             primitive_actions=self.primitive_actions,
             with_mp_feedback=self.planner_cfg.with_mp_feedback,
             trace_size=self.planner_cfg.trace_size,
+            env_name=cfg.env.env_name,
+
         )
+
         self.max_llm_calls = cfg.max_llm_calls
 
         self.play_traj = cfg.play_traj

@@ -30,6 +30,7 @@ class LLMTAMPPlanner(BasePlanner, LLMBase):
         primitive_actions: Dict[str, PrimitiveAction],
         with_mp_feedback: bool = True,
         trace_size: int = 3,
+        env_name: str = "",  # Add the new string argument here
         *args,
         **kwargs,
     ):
@@ -55,6 +56,8 @@ class LLMTAMPPlanner(BasePlanner, LLMBase):
 
         # trace
         self._trace = []
+        
+        self.env_name = env_name
 
     def reset(self):
         self._trace = []
@@ -62,8 +65,11 @@ class LLMTAMPPlanner(BasePlanner, LLMBase):
     def _prepare_planning_prompt(
         self, obs_text: str, feedback_text: str, symbolic_plan: List[str] = []
     ):
-        #input("Please tell me what should I do for you : ")
-        self.task_to_do = 'put apple and  green_bowl in the grey_plate'#'clean the table, move sugar_box, tomato_can, and cracker_box to the left_table and move plate and cup to the right_table' 
+        
+        if self.env_name == 'easy_ycb_table_obj':
+            self.task_to_do = 'clean the table, move sugar_box, tomato_can, and cracker_box to the left_table and move plate and cup to the right_table' 
+        elif self.env_name == 'easy_ycb_objects_scene':     
+            self.task_to_do = 'put apple and  green_bowl in the grey_plate'        #input("Please tell me what should I do for you : ")
         #self.task_to_do =input('what should I do for you: ') 
         reasoner = TaskReasoner(ontology_path)
         start_time = time.time()
