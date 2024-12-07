@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot name="objects">
+
+ 
+  
+  <!-- Green Cup -->
+  <link name="green_cup">
+    <visual>
+      <origin xyz="0.39 -0.09 0.04" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="green_cup/textured.obj" scale="1 1 1"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.39 -0.09 0.04" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="green_cup/collision.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Grey Plate -->
+  <link name="grey_plate">
+    <visual>
+      <origin xyz="0.39 0.13 0.04" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="grey_plate/textured.obj" scale="1 1 1"/>
+      </geometry>
+      <material name="grey">
+        <color rgba="0.5 0.5 0.5 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.39 0.13 0.04" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="grey_plate/collision.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Plastic Apple -->
+  <link name="plastic_apple">
+    <visual>
+      <origin xyz="0.39 0.32 0.04" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="plastic_apple/textured.obj" scale="1 1 1"/>
+      </geometry>
+      <material name="tan">
+        <color rgba="0.82 0.71 0.55 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.39 0.32 0.04" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="plastic_apple/collision.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+
+</robot>

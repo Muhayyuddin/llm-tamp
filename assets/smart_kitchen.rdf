@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/kitchen_ontology#"
+     xml:base="http://www.example.org/kitchen_ontology"
+     xmlns:ex="http://www.example.org/kitchen_ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.example.org/kitchen_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/kitchen_ontology#hasAction"/>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#hasObjectType -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/kitchen_ontology#hasObjectType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/kitchen_ontology#hasDescription">
+        <rdfs:label>has description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#hasOrientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/kitchen_ontology#hasOrientation">
+        <rdfs:label>has orientation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#hasPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/kitchen_ontology#hasPosition">
+        <rdfs:label>has position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#hasPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/kitchen_ontology#hasPriority">
+        <rdfs:label>has priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Action -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#Action">
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#ActionPriority -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#ActionPriority">
+        <rdfs:label>ActionPriority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#BoxedFood -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#BoxedFood">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/kitchen_ontology#Object"/>
+        <rdfs:label>BoxedFood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Container -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#Container">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/kitchen_ontology#Object"/>
+        <rdfs:label>Container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Crockery -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#Crockery">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/kitchen_ontology#Object"/>
+        <rdfs:label>Crockery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#FoodItem -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#FoodItem">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/kitchen_ontology#Object"/>
+        <rdfs:label>FoodItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#KitchenItem -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#KitchenItem">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/kitchen_ontology#Object"/>
+        <rdfs:label>KitchenItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Object -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#Object">
+        <rdfs:label>Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Utensil -->
+
+    <owl:Class rdf:about="http://www.example.org/kitchen_ontology#Utensil">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/kitchen_ontology#Object"/>
+        <rdfs:label>Utensil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule1">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>after crockery because food items have lower priority in put action.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasPriority>
+        <hasAction>put</hasAction>
+        <hasObjectType>FoodItem</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule2">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>first because crockery has priority over food items in put action .</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasPriority>
+        <hasAction>put</hasAction>
+        <hasObjectType>Crockery</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule3">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>first because fooditem have the highest priority for clearing.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasPriority>
+        <hasAction>clean</hasAction>
+        <hasObjectType>FoodItem</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule4">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>at the end after food items and after boxed food</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</hasPriority>
+        <hasAction>clean</hasAction>
+        <hasObjectType>Crockery</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule5">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription> after fooditem but before crockery.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</hasPriority>
+        <hasAction>clean</hasAction>
+        <hasObjectType>BoxedFood</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule6">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>first because boxedfood has priority.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasPriority>
+        <hasAction>arrange</hasAction>
+        <hasObjectType>BoxedFood</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule7">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>after boxedfood but before fooditems.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasPriority>
+        <hasAction>arrange</hasAction>
+        <hasObjectType>Crockery</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule8">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>last because food items have lower priority.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasPriority>
+        <hasAction>arrange</hasAction>
+        <hasObjectType>FoodItem</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#Rule9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#Rule9">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#ActionPriority"/>
+        <hasDescription>first because container has the highest priority for the put action.</hasDescription>
+        <hasPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasPriority>
+        <hasAction>put</hasAction>
+        <hasObjectType>Container</hasObjectType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#apple">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#FoodItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>apple</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#arrange -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#arrange">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Action"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>arrange</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#banana">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#FoodItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>banana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#basket -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#basket">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Container"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>basket</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#bowl -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#bowl">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <rdfs:label>bowl</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#bread -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#bread">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#FoodItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>bread</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#cereal_box -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#cereal_box">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#BoxedFood"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>cereal_box</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#clean -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#clean">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Action"/>
+        <rdfs:label>clean</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#cracker_box -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#cracker_box">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#BoxedFood"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>cracker_box</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#cup">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>cup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#fork -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#fork">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Utensil"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>fork</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#gery_plate -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#gery_plate">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#KitchenItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>grey_plate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#glass -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#glass">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>glass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#green_bowl -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#green_bowl">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>green_bowl</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#green_cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#green_cup">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>green_cup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#jug -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#jug">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>jug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#left_table -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#left_table">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#KitchenItem"/>
+        <rdfs:label>left_table</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#orange">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#FoodItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>orange</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#pick -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#pick">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Action"/>
+        <rdfs:label>pick</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#place -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#place">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Action"/>
+        <rdfs:label>place</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#plastic_apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#plastic_apple">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#FoodItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>plastic_apple</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#plastic_banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#plastic_banana">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#FoodItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>plastic_banana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#plate -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#plate">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Crockery"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>plate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#put -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#put">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Action"/>
+        <rdfs:label>put</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#right_table -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#right_table">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#KitchenItem"/>
+        <rdfs:label>right_table</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#spoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#spoon">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Utensil"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>spoon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#stack -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#stack">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Action"/>
+        <rdfs:label>stack</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#sugar_box -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#sugar_box">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#BoxedFood"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>sugar_box</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#table -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#table">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#KitchenItem"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>table</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#tomato_can -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#tomato_can">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#BoxedFood"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>tomato_can</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/kitchen_ontology#tray -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/kitchen_ontology#tray">
+        <rdf:type rdf:resource="http://www.example.org/kitchen_ontology#Container"/>
+        <hasOrientation>0.0,0.0,0.0,1.0</hasOrientation>
+        <hasPosition>0.0,0.0,0.0</hasPosition>
+        <rdfs:label>tray</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.example.org/kitchen_ontology#hasAction">
+        <rdfs:label>has action</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/kitchen_ontology#hasObjectType">
+        <rdfs:label>has object type</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
