@@ -48,3 +48,8 @@ python main.py --config-name=llm_tamp env=easy_ycb_tabe_obj planner=llm_sample_p
 
 
 ```
+## Acknowledgment
+Thank you for the nice work done by LLM3, FoundationPose, and FoundationPose-ROS2 , we use some code from these repositories to implement our Ontology-deriven-LLM-TAMP framework.
+https://github.com/AssassinWS/LLM-TAMP
+https://github.com/NVlabs/FoundationPose
+https://github.com/ammar-n-abbas/FoundationPoseROS2
