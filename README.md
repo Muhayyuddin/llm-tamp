@@ -32,3 +32,5 @@ Please, create a folder `openai_keys` under the project directory; and create a 
 
 ## Run TAMP planning
 Run the below command to launch the ontology-driven LLM-TAMP with the following scene 
+![alt text](https://github.com/Muhayyuddin/llm-tamp/blob/main/assets/1.png?raw=true)
+
