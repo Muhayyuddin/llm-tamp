@@ -33,17 +33,16 @@ Please, create a folder `openai_keys` under the project directory; and create a 
 ## Run TAMP planning
 To run the ontology-driven LLM-TAMP with the following scene, run the command below in the terminal  
 
-<div style="text-align: center;">
-    <img src="https://github.com/Muhayyuddin/llm-tamp/blob/main/assets/1.png?raw=true" alt="alt text" width="500"/>
-</div>
+<img src="https://github.com/Muhayyuddin/llm-tamp/blob/main/assets/1.png?raw=true" alt="alt text" width="500"/>
+
 ```
 python main.py --config-name=llm_tamp env=easy_ycb_objects_scene planner=llm_sample_params max_llm_calls=10 play_traj=true use_gui=true
 
 ```
 To run the ontology-driven LLM-TAMP with the following scene, run the command below in the terminal  
-<div style="text-align: center;">
-    <img src="https://github.com/Muhayyuddin/llm-tamp/blob/main/assets/2.png?raw=true" alt="alt text" width="500"/>
-</div>
+
+<img src="https://github.com/Muhayyuddin/llm-tamp/blob/main/assets/2.png?raw=true" alt="alt text" width="500"/>
+
 ```
 python main.py --config-name=llm_tamp env=easy_ycb_tabe_obj planner=llm_sample_params max_llm_calls=10 play_traj=true use_gui=true
 
