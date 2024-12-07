@@ -1,8 +1,11 @@
-# Create the environment with Python 3.9
-conda create --name tamp-env python=3.9
+#ontology-Driven LLM-TAMP
 
-# Activate the environment
+To run the code create a conda environment with python 3.9 using the below command 
+
+```
+conda create --name tamp-env python=3.9
 conda activate tamp-env
+```
 
 # Install pybullet
 pip install pybullet
