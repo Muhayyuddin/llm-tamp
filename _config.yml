@@ -124,7 +124,7 @@ navigation_header:
 - title: Home
   url: "https://muhayyuddin.github.io/llm-tamp/"
 - title: Paper
-  url: https://arxiv.org/
+  url: https://arxiv.org/pdf/2412.07493
 - title: Github
   url: "https://github.com/Muhayyuddin/llm-tamp" 
 - title: Framework
