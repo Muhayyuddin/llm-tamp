@@ -9,7 +9,7 @@
 
 <div style="text-align: center;">
   {% include button.html text="GitHub" icon="github" link="https://github.com/Muhayyuddin/llm-tamp" color="#0366d6" %}
-  {% include button.html text="Preprint" icon="assets/arxiv.png" link="https://arxiv.org/" color="#0366d6"  %}
+  {% include button.html text="Preprint" icon="assets/arxiv.png" link="https://arxiv.org/pdf/2412.07493" color="#0366d6"  %}
   {% include button.html text="FAQs"  link="#faqs" color="#0366d6"  %}
 </div>
 <div style="text-align: center; width: 100%; overflow: hidden;">
