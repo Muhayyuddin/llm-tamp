@@ -81,12 +81,12 @@ We evaluated the proposed prompt-tuning framework using various random inputs wi
   <img src="assets/ssp4.png" alt="framework" />
 </div>!-->
 
-<h5 id="framework" style="margin-bottom: 10px;">Ontology-driven Prompt Tunning Framework</h5>
+<h5 id="framework" style="margin-bottom: 10px;">Onto-LLM-TAMP Framework</h5>
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
 The ontology-driven LM-TAMP framework enhances prompt elaboration for generating semantically accurate symbolic plans. It begins by processing the user input to extract actions and objects through semantic tagging. The Contextual Inference Engine uses SPARQL queries to retrieve object types and priorities from the ontology, ensuring the correct action sequence based on predefined rules. The Perception Module, with YOLO-based object detection and FoundationPose for object pose estimation, provides real-time spatial data. This information is textualized using ontological knowledge by the Env State Descriptor and fed into the Prompt Generator. The final prompt is then fed into the LLM Task Planner, which produces a structured task plan. Finally, the Motion Planner ensures the robot executes the task with feasible, collision-free movements.
 </div>
 <div style="text-align: center;">
-  <img src="assets/ssp4.png" alt="framework" />
+  <img src="assets/framework.png" alt="framework" />
 </div>
 
 <h5 id="framework" style="margin-bottom: 10px;">Ontological Knowledge Graph</h5>
