@@ -68,8 +68,10 @@ To run the ontology-driven LLM-TAMP with the following scene, run the command be
 ```
 python main.py --config-name=llm_tamp env=easy_ycb_tabe_obj planner=llm_sample_params max_llm_calls=10 play_traj=true use_gui=true
 
-
 ```
+## Ontological Knowledge
+We provided the minimal classes and rules of our developed ontological knowledge to reproduce the results. The full Ontology rdf file and clean version of the code will be updated on acceptance. 
+
 ## Acknowledgment
 Thank you for the nice work done by LLM3, FoundationPose, and FoundationPose-ROS2 , we use some code from these repositories to implement our Ontology-deriven-LLM-TAMP framework.
 
