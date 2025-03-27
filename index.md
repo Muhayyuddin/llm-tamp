@@ -1,10 +1,10 @@
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
-        Ontology-driven Prompt Tuning for LLM-based Task and Motion Planning
+        Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models
 </div>
 <div style="text-align: center; font-size: 16px; margin-bottom: 10px; line-height: 1.4;">
-    Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa, Lakmal Seneviratne, and Irfan Hussain
+    Muhayy Ud Din, Jan Rosell, Waseem Akram, Isiah Zaplana, Maximo A Roa, and Irfan Hussain
 </div>
 
 <div style="text-align: center;">
@@ -18,7 +18,21 @@
 
 <h5 style="margin-bottom: 10px;"> Overview </h5>
 <div style="text-align: justify; font-size: 14px; margin-bottom: 10px; line-height: 1.4;">
-Performing complex  manipulation tasks in dynamic environments requires efficient Task and Motion Planning (TAMP) approaches, which combine high-level symbolic plan with low-level motion planning. Advances in Large Language Models (LLMs), such as GPT-4, is transforming task planning by offering natural language as an intuitive and flexible way to describe tasks, generate symbolic plans, and reason. However, the effectiveness of LLM-based TAMP approaches is limited due to static and template-based prompting, which struggles in adapting to dynamic environments and complex task contexts. To address these limitations, this work proposes a novel ontology-driven prompt-tuning framework that employs knowledge-based reasoning to refine and expand user prompts with task contextual reasoning and knowledge-based environment state descriptions. Integrating domain-specific knowledge into the prompt ensures semantically accurate and context-aware task plans. The proposed framework demonstrates its effectiveness by resolving semantic errors in symbolic plan generation, such as maintaining logical temporal goal ordering in scenarios involving hierarchical object placement. The proposed framework is validated through both simulation and real-world scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability to dynamic environments, and the generation of semantically correct task plans. 
+Performing complex manipulation tasks in dynamic environments requires efficient Task and Motion
+Planning (TAMP) approaches that combine high-level symbolic plans with low-level motion control.
+Advances in Large Language Models (LLMs), such as GPT-4, are transforming task planning by
+offering natural language as an intuitive and flexible way to describe tasks, generate symbolic
+plans, and reason. However, the effectiveness of LLM-based TAMP approaches is limited due
+to static and template-based prompting, which limits adaptability to dynamic environments and
+complex task contexts. To address these limitations, this work proposes a novel Onto-LLM-TAMP
+framework that employs knowledge-based reasoning to refine and expand user prompts with task-
+contextual reasoning and knowledge-based environment state descriptions. Integrating domain-
+specific knowledge into the prompt ensures semantically accurate and context-aware task plans. The
+proposed framework demonstrates its effectiveness by resolving semantic errors in the symbolic plan
+generation, such as maintaining logical temporal goal ordering in scenarios involving hierarchical
+object placement. The proposed framework is validated through both simulation and real-world
+scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability
+to dynamic environments and the generation of semantically correct task plans.
 </div>
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
