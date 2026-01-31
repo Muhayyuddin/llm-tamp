@@ -1,5 +1,5 @@
 import cv2
-
+# detection
 def draw_detections(image_path, labels_file, output_path):
     """
     Draw bounding boxes and labels on the image using OpenCV.
