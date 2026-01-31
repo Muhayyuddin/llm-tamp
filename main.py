@@ -11,7 +11,7 @@ RUNNER = {
     "random_sample": RandomSampleRunner,
 }
 
-
+# main function
 @hydra.main(version_base=None, config_path="configs")
 def main(cfg: DictConfig):
     assert len(cfg) > 0, "No config file specified!"
