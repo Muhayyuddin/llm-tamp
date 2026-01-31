@@ -13,7 +13,7 @@ from utils.io_util import mkdir, save_npz, dump_json
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-
+# runner 
 class TAMPRunner:
     def __init__(self, cfg):
         self.cfg = cfg
