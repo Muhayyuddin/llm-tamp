@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import numpy as np
 import cv2
-
+# Perception class
 class YOLOv8Detector:
     def __init__(self, model_path='best.pt'):
         # Load the YOLOv8 model
