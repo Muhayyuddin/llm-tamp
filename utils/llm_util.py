@@ -18,7 +18,7 @@ OPENAI_KEYS = load_json(openai_keys_folder / "openai_key.json")
 
 logger = logging.getLogger(__name__)
 
-
+#API calls
 @retry(tries=5, delay=60)
 def connect_openai(
     client,
