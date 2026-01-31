@@ -31,6 +31,7 @@ COLOR_MAP = {
     "cyan": CYAN,
 }
 
+
 RGB = namedtuple("RGB", ["red", "green", "blue"])
 COLOR_FRANKA = [
     RGB(red=162 / 255, green=192 / 255, blue=222 / 255),
