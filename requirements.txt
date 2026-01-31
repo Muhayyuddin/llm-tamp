@@ -12,6 +12,6 @@ IPython
 hydra-core
 pybullet
 spacy
-rdflib
 ultralytics
+rdflib
 
