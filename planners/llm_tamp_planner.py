@@ -19,7 +19,7 @@ namespace = "http://www.semanticweb.org/muhayy/ontologies/2024/kitchen#"
 logger = logging.getLogger(__name__)
 
 
-
+#LLM TAMP planner
 class LLMTAMPPlanner(BasePlanner, LLMBase):
     """LLM TAMP Planner"""
 
