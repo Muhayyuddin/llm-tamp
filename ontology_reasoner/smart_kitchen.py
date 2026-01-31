@@ -2,6 +2,7 @@ from termcolor import colored
 import spacy
 from rdflib import Graph, Namespace, RDF
 
+
 class TaskReasoner:
     def __init__(self, rdf_file="smart_kitchen.rdf"):
         self.nlp = spacy.load("en_core_web_sm")
@@ -134,7 +135,7 @@ class TaskReasoner:
 
     def execute_task(self, sentence):
         """Execute task: process input, reason, and print output."""
-        action, objects = self.process_input(sentence)
+        action, objects = self.process_input(sentence) # 
         if action and objects:
             reasoned_output, grouped_objects = self.reason_action(action, objects)
             self.print_reasoned_output(action, objects, reasoned_output)
