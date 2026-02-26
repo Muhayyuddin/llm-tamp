@@ -1,37 +1,38 @@
 <style>
   .citation-box{
-    background-color:#f6f8fa;
-    border:1px solid #d0d7de;
-    border-radius:3px;
+  background:#f6f8fa;
+  border:1px solid #d0d7de;
+  border-radius:3px;
+  margin:5px 0;
+  padding:0;
 
-    /* tighter container */
-    padding:0;              /* was 1px */
-    margin:5px 0;
-    font-family:'Monaco','Menlo','Ubuntu Mono',monospace;
-    font-size:8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size:8px;
+  line-height:1.0;
 
-    /* remove the “extra space” caused by a forced vertical scrollbar area */
-    overflow-x:auto;
-    overflow-y:clip;        /* or: hidden; (clip avoids reserving space) */
+  /* scrollbar on the container, not on <pre> */
+  overflow-x:auto;
+  overflow-y:hidden;
 
-    line-height:1.05;       /* overall tighter line spacing */
-  }
+  /* helps avoid reserving extra gutter space (supported in modern browsers) */
+  scrollbar-gutter: auto;
+}
 
-  .citation-box pre{
-    margin:0 !important;
-    padding:0 !important;
+.citation-box pre{
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
 
-    line-height:1.05;       /* tighter BibTeX lines */
-    white-space:pre;        /* keep BibTeX formatting */
-  }
+  line-height:1.0 !important;
 
-  .citation-box code{
-    display:block;
-    margin:0 !important;
-    padding:0 !important;
-    line-height:inherit;
-  }
-</style>
+  /* important: avoid pre creating its own scroll area */
+  overflow: visible !important;
+
+  white-space: pre;         /* keep formatting */
+  display:block;
+}
+
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
@@ -68,16 +69,15 @@ object placement. The proposed framework is validated through both simulation an
 scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability
 to dynamic environments and the generation of semantically correct task plans.
 </div>
-<h5 style="margin-bottom: 5px; font-size: 16px;">Citation</h5>
+<h5>Citation</h5>
 <div class="citation-box">
-<code>
-@article{din2025llmguidedtaskmotionplanning,<br>
-&nbsp;&nbsp;title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models},<br>
-&nbsp;&nbsp;author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},<br>
-&nbsp;&nbsp;year={2026},<br>
-&nbsp;&nbsp;journal={Robotics and Autonomous Systems}<br>
-}
-</code>
+<pre>@article{din2025llmguidedtaskmotionplanning,
+  title   = {Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models},
+  author  = {Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and
+             Maximo A Roa and Irfan Hussain},
+  year    = {2026},
+  journal = {Robotics and Autonomous Systems}
+}</pre>
 </div>
 
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
