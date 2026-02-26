@@ -32,7 +32,7 @@
   white-space: pre;         /* keep formatting */
   display:block;
 }
-
+</style>
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
