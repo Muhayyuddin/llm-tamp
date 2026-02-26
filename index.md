@@ -70,12 +70,12 @@ to dynamic environments and the generation of semantically correct task plans.
 </div>
 <h5 style="margin-bottom: 5px; font-size: 16px;">Citation</h5>
 <div class="citation-box">
-<pre><code>@article{din2025llmguidedtaskmotionplanning,
-      title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
-      author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
-      year={2026},
-      journal = {Robotics and Autonomous Systems}
-}</code></pre>
+<pre>@article{din2025llmguidedtaskmotionplanning,
+  title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models},
+  author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
+  year={2026},
+  journal={Robotics and Autonomous Systems}
+}</pre>
 </div>
 
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
