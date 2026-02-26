@@ -60,7 +60,7 @@ scenarios, demonstrating significant improvements over the baseline approach in 
 to dynamic environments and the generation of semantically correct task plans.
 </div>
 
-<h6>Citation</h6>
+<h7>Citation</h7>
 <div class="citation-box">
 <pre><code>@article{din2025llmguidedtaskmotionplanning,
       title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
