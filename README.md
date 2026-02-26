@@ -29,6 +29,7 @@ to dynamic environments and the generation of semantically correct task plans.
       author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
       year={2026},
       journal = {Robotics and Autonomous Systems}
+}
 ```
 ## Install dependencies
 
