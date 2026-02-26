@@ -1,37 +1,38 @@
 
-<style>.citation-box{
-  background:#f6f8fa;
-  border:1px solid #d0d7de;
-  border-radius:3px;
-  margin:5px 0;
-  padding:0;
+<style>
+.citation-box {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 3px;
+  margin: 5px 0;
+  padding: 0; /* remove inner spacing */
 
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size:8px;
-  line-height:1.0;
+  font-size: 8px;
+  line-height: 1.0;
 
-  /* scrollbar on the container, not on <pre> */
-  overflow-x:auto;
-  overflow-y:hidden;
+  /* horizontal scroll only, remove extra vertical space */
+  overflow-x: auto;
+  overflow-y: hidden;
 
-  /* helps avoid reserving extra gutter space (supported in modern browsers) */
-  scrollbar-gutter: auto;
+  scrollbar-gutter: none; /* prevent extra reserved space */
 }
 
-.citation-box pre{
-  margin:0 !important;
-  padding:0 !important;
-  border:0 !important;
-  background:transparent !important;
+.citation-box pre {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
 
-  line-height:1.0 !important;
-
-  /* important: avoid pre creating its own scroll area */
+  line-height: 1.0 !important;
   overflow: visible !important;
+  white-space: pre; /* keep formatting */
+  display: block;
 
-  white-space: pre;         /* keep formatting */
-  display:block;
-}</style>
+  /* remove extra space below horizontal scrollbar */
+  box-sizing: border-box;
+}
+</style>
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
