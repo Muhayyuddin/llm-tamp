@@ -4,10 +4,10 @@
             background-color: #f6f8fa;
             border: 1px solid #d0d7de;
             border-radius: 6px;
-            padding: 20px;
-            margin: 20px 0;
+            padding: 10px;
+            margin: 10px 0;
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 14px;
+            font-size: 10px;
             overflow-x: auto;
         }
 </style>
