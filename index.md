@@ -60,15 +60,7 @@ scenarios, demonstrating significant improvements over the baseline approach in 
 to dynamic environments and the generation of semantically correct task plans.
 </div>
 
-<h7>Citation</h7>
-<div class="citation-box">
-<pre><code>@article{din2025llmguidedtaskmotionplanning,
-      title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
-      author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
-      year={2026},
-      journal = {Robotics and Autonomous Systems}
-}</code></pre>
-</div>
+
 
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
@@ -139,7 +131,15 @@ Below is the sample ontological knowledge graph along with some individuals from
 <div style="text-align: center;">
   <img src="assets/ontograph.png" alt="framework" />
 </div>
-
+<h6>Citation</h6>
+<div class="citation-box">
+<pre><code>@article{din2025llmguidedtaskmotionplanning,
+      title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
+      author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
+      year={2026},
+      journal = {Robotics and Autonomous Systems}
+}</code></pre>
+</div>
 <h5 id="faqs" style="margin-bottom: 10px;">FAQs</h5>
 <h8>Q1- Why we need Ontology-driven LLM-TAMP?</h8> 
 <div style="text-align: justify; font-size: 14px; line-height: 1.4;">
