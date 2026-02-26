@@ -1,3 +1,16 @@
+<style>
+
+        .citation-box {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+</style>
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
 
 <div  id="home" style="text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: bold; line-height: 1.4;">
@@ -34,6 +47,16 @@ object placement. The proposed framework is validated through both simulation an
 scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability
 to dynamic environments and the generation of semantically correct task plans.
 </div>
+<h3>Citation</h3>
+<div class="citation-box">
+<pre><code>@article{din2025llmguidedtaskmotionplanning,
+      title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
+      author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
+      year={2026},
+      journal = {Robotics and Autonomous Systems}
+}</code></pre>
+</div>
+
 <h5 style="margin-bottom: 10px;">Knowledge-oriented LLM-TAMP results</h5> 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim-gif.gif" alt="Simulation GIF" width="100%" height="auto">
