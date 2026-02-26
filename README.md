@@ -21,6 +21,15 @@ to dynamic environments and the generation of semantically correct task plans.
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="https://github.com/Muhayyuddin/llm-tamp/raw/refs/heads/llm-site/assets/sim-gif.gif" alt="Simulation GIF" width="100%" height="auto">
 </div>
+
+## Citation
+```
+@article{din2025llmguidedtaskmotionplanning,
+      title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
+      author={Muhayy {Ud Din} and Jan Rosell and Waseem Akram and Isiah Zaplana and Maximo A Roa and Irfan Hussain},
+      year={2026},
+      journal = {Robotics and Autonomous Systems}
+```
 ## Install dependencies
 
 To run the code create a conda environment with python 3.9 using the below command 
