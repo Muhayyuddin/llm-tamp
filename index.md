@@ -3,24 +3,33 @@
     background-color:#f6f8fa;
     border:1px solid #d0d7de;
     border-radius:3px;
-    padding:1px;
+
+    /* tighter container */
+    padding:0;              /* was 1px */
     margin:5px 0;
     font-family:'Monaco','Menlo','Ubuntu Mono',monospace;
     font-size:8px;
+
+    /* remove the “extra space” caused by a forced vertical scrollbar area */
     overflow-x:auto;
-    overflow-y:hidden;      /* prevents vertical extra area */
+    overflow-y:clip;        /* or: hidden; (clip avoids reserving space) */
+
+    line-height:1.05;       /* overall tighter line spacing */
   }
 
   .citation-box pre{
-    margin:0 !important;    /* removes default pre margins */
+    margin:0 !important;
     padding:0 !important;
-    line-height:1.15;       /* tighter lines; adjust if needed */
-    display:block;
+
+    line-height:1.05;       /* tighter BibTeX lines */
+    white-space:pre;        /* keep BibTeX formatting */
   }
 
   .citation-box code{
     display:block;
+    margin:0 !important;
     padding:0 !important;
+    line-height:inherit;
   }
 </style>
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
