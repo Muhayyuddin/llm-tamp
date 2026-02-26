@@ -7,7 +7,8 @@
             padding: 20px;
             margin: 20px 0;
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 1.2;
             overflow-x: auto;
         }
 </style>
@@ -47,7 +48,7 @@ object placement. The proposed framework is validated through both simulation an
 scenarios, demonstrating significant improvements over the baseline approach in terms of adaptability
 to dynamic environments and the generation of semantically correct task plans.
 </div>
-<h5>Citation</h5>
+<h5 style="margin-bottom: 5px; font-size: 16px;">Citation</h5>
 <div class="citation-box">
 <pre><code>@article{din2025llmguidedtaskmotionplanning,
       title={Onto-LLM-TAMP: Knowledge-oriented Task and Motion Planning using Large Language Models}, 
